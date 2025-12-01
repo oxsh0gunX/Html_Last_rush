@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    
+    <h1>change the backgroud colors</h1>
+    <input type="button" onclick="clange_col()">click me 
+    <script>
+               let colors=["red","blue","yelow",white];
+               let i=0
+
+       function clange_col(){
+        document.body.style.backgroundColor=colors[i];
+        i++;
+        if (i>=colors.length){
+            i=0;
+        }
+        
+        }
+    </script>
+</body>
+</html>

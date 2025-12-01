@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM VALIDSTION</h1>
+    <form onsubmit="validation()">
+    <label>Name:</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label>Email:</label>
+    <input type="text"name="mail"id="mail">
+    <br>
+    <label>Password</label>
+    <input type="password" id="pass">
+    <input type="submit" value="submit">
+
+    </form>
+    <script>
+        function validation(){
+            let name=document.getElementById("name").value;
+            let mail=document.getElementById("mail").value;
+            let pass=document.getElementById("pass").value;
+            if(name==""||mail==""||pass==""){
+                alert("Enter the detials");
+            }
+            if(!mail.includes("@") || !mail.includes(".")){
+                alert("Not a valid mail");
+            }
+            if(pass.length<=6){
+                alert("password need min 6 leeter");
+            }
+            alert("form is valid machu");
+
+        }
+    </script>
+</body>
+</html>

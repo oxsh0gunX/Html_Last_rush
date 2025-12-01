@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function checking(){
+            let result=0
+            if (document.getElementById("a").checked) result++;
+            if(document.getElementById("b").checked) result ++;
+            if (document.getElementById("c").checked) result ++;
+            document.getElementById("result").innerHTML="The result is"+result ;
+        }
+        
+    </script>
+    <h2>What is HTML</h2>
+    <input type="radio" name="1" id="a">HYPER TEXT MARKUP LANGUge<br>
+    <input type="radio" name="1">HYPER ANDI<br>
+
+    <h2>what is css</h2>
+    <input type="radio"name="2">CASH PARI<br>
+    <input type="radio" name="2" id="b">CASE CADDING STYLESHEET<BR>
+
+        <h2>what is css</h2>
+    <input type="radio"name="3">CASH PARI<br>
+    <input type="radio" name="3" id="c">CASE CADDING STYLESHEET<BR>
+        <input type="button"value="submit"name="submit" onclick="checking()">
+        <h2 id="result">result</h2>
+
+</body>
+</html>
